@@ -1,0 +1,159 @@
+#include "ui/menudefinition.h";
+{    
+    menuDef
+    {
+        name "cjvotemap"
+        rect 0 0 640 480 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+        style WINDOW_STYLE_FILLED
+        borderSize 1
+        foreColor  1 1 1 1
+        onESC { play  "mouse_click"; close self ;  }
+        focusColor 1 1 1 1
+        visible 0  
+
+        itemDef
+        {
+            name "vote_bg"
+            rect -130 -80 260 160 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			decoration
+			visible 1
+			style 3
+			border 1
+			bordersize 2
+			forecolor 0.2 0.2 0.22 0.65
+			bordercolor 0.4 0.405 0.42 1
+			background "white"
+			textscale 0.55
+        }
+        itemDef
+        {
+            name "vote_bg"
+            rect -130 -80 260 160 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.7
+			background "gradient_bottom"
+			textscale 0.55
+        }
+        itemDef
+        {
+            rect -115 56 30 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont   UI_FONT_NORMAL
+            textAlign  ITEM_ALIGN_MIDDLE_CENTER
+            textScale  0.3
+            textStyle  ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_BACK"
+            mouseEnter { play "mouse_over";  }
+            action     { play  "mouse_click"; close "cjvotemap";open "cjvote";  }
+            visible 1  
+        }
+        itemDef
+        {
+            rect 80 56 30 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont   UI_FONT_NORMAL
+            textAlign  ITEM_ALIGN_MIDDLE_CENTER
+            textScale  0.3
+            textStyle  ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_CLOSE"
+            mouseEnter { play "mouse_over";  }
+            action     { play  "mouse_click"; close "cjvotemap"; }
+            visible 1  
+        }
+        itemDef
+        {
+            name "cj_votemap"
+            rect -105 -60 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor  1 1 1 0.8
+            textFont   UI_FONT_NORMAL
+            textAlignY 8
+            textScale  0.375
+            textStyle  ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_VOTE_MAP"
+            visible 1  
+            decoration 
+        }
+        itemDef
+        {
+            rect -105 -55 162 0.5 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 1
+            backColor  1 1 1 0.5
+            textScale  0.55
+            visible 1  
+            decoration 
+        }
+        itemDef
+        {
+            rect -105 -54 162 0.5 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 1
+            backColor  1 1 1 0.5
+            textScale  0.55
+            visible 1  
+            decoration 
+        }
+        itemDef
+        {
+            name "cj_vote_map_extend"
+            rect -105 -42 74 12 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 0.9
+            type ITEM_TYPE_BUTTON
+            textFont   UI_FONT_NORMAL
+            textAlign  ITEM_ALIGN_MIDDLE_LEFT
+            textScale  0.267857
+            textStyle  ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_VOTE_MAP_EXTEND"
+            mouseEnter { play "mouse_over";  }
+            action     { play  "mouse_click"; close "cjvotemap"; scriptmenuresponse "extend"; }
+            visible 1  
+        }
+        itemDef
+        {
+            name "cj_vote_map_rotate"
+            rect -105 -28 70 12 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 0.9
+            type ITEM_TYPE_BUTTON
+            textFont   UI_FONT_NORMAL
+            textAlign  ITEM_ALIGN_MIDDLE_LEFT
+            textScale  0.267857
+            textStyle  ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_VOTE_MAP_ROTATE"
+            mouseEnter { play "mouse_over";  }
+            action     { play  "mouse_click"; close "cjvotemap"; scriptmenuresponse "rotate"; }
+            visible 1  
+        }
+        itemDef
+        {
+            name "cj_vote_map_change"
+            rect -105 -14 74 12 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor  1 1 1 0.9
+            type ITEM_TYPE_BUTTON
+            textFont   UI_FONT_NORMAL
+            textAlign  ITEM_ALIGN_MIDDLE_LEFT
+            textScale  0.267857
+            textStyle  ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_VOTE_MAP_CHANGE"
+            mouseEnter { play "mouse_over";  }
+            action     { play  "mouse_click"; close "cjvotemap"; open "cjvotemapchange"; }
+            visible 1  
+        }
+    }
+}    

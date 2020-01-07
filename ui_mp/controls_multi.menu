@@ -1,0 +1,71 @@
+#include "ui/menudef.h"
+#include "ui_mp/iw4_macros.inc"
+
+#define CHOICE_GROUP	"pc_settings"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+{
+	menuDef
+	{
+		name "controls_multi"
+		rect 0 0 640 480 0 0
+		forecolor CHOICE_TEXTCOLOR
+		focuscolor CHOICE_TEXTCOLOR
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		blurWorld 7
+		onOpen
+		{
+			exec "setfromdvar ui_name name";
+			setLocalVarBool "ui_hideBack" ( 1 );
+		}
+		onRequestClose
+		{
+			setLocalVarBool "ui_hideBack" ( 0 );
+		}
+		onEsc
+		{
+			close "self";
+		}
+
+		#define BACKGROUND_SETTINGS
+		#include "ui_mp/blurredbg.inc"
+
+		CHOICE_MENU_TITLE( "@MENU_CONTROLS_CAPS", 0 0 272 28 1 1 )
+		#include "ui_mp/leftside_controlsx.inc"
+		
+		CHOICE_SECTION_TITLE( 20, "@MENU_CHAT" )
+		
+		#undef CHOICE_TEXT_OFFSET_X
+		#define CHOICE_TEXT_OFFSET_X -130
+		
+		CHOICE_BIND( 20, "@MENU_TEXT_CHAT", "chatmodepublic", ; )
+		CHOICE_BIND( 21, "@MENU_TEXT_TEAM_CHAT", "chatmodeteam", ; )
+		CHOICE_BIND( 22, "@MENU_QUICK_CHAT", "mp_QuickMessage", ; )
+		
+		CHOICE_SECTION_SEPARATOR( 23 )
+
+		CHOICE_BIND( 23, "@MENU_VOTE_YES", "openscriptmenu cjvote cjvoteyes", ; )
+		CHOICE_BIND( 24, "@MENU_VOTE_NO", "openscriptmenu cjvote cjvoteno", ; )
+
+		CHOICE_SECTION_SEPARATOR( 25 )
+
+		CHOICE_BIND( 25, "@CJMENU_SAVE", "openscriptmenu cj save", ;)
+		CHOICE_BIND( 26, "@CJMENU_LOAD", "openscriptmenu cj load", ;)
+		CHOICE_BIND( 27, "@CJMENU_SAVE2", "openscriptmenu cj save2", ;)
+		CHOICE_BIND( 28, "@CJMENU_LOAD2", "openscriptmenu cj load2", ;)
+		CHOICE_BIND( 29, "@CJMENU_SAVE3", "openscriptmenu cj save3", ;)
+		CHOICE_BIND( 30, "@CJMENU_LOAD3", "openscriptmenu cj load3", ;)
+		CHOICE_BIND( 31, "@CJMENU_SUICIDE", "openscriptmenu cj suicide", ;)
+
+		CHOICE_SECTION_SEPARATOR( 32 )
+
+		CHOICE_BIND( 32, "Open Admin Menu", "openscriptmenu cj admin", ;)
+
+		CHOICE_BACK_VIS( "@PLATFORM_BACK_CAPS", MENU_OPTION_IS_OPEN, 1 )	
+		
+		CHOICE_KEYBINDHELP
+	}
+}

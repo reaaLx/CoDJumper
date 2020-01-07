@@ -1,0 +1,13 @@
+{
+	menuDef
+	{
+		name "perk_display"
+		rect 0 0 640 1 1 0
+		forecolor 1 1 1 1
+		visible 0
+		onOpen
+		{
+			close "self";
+		}
+	}
+}

@@ -1,0 +1,49 @@
+REFERENCE           CJMENU_SAVE
+LANG_ENGLISH        "Primary Save"
+
+REFERENCE           CJMENU_SAVE2
+LANG_ENGLISH        "Secondy Save"
+
+REFERENCE           CJMENU_SAVE3
+LANG_ENGLISH        "Tertiary Save"
+
+REFERENCE           CJMENU_LOAD
+LANG_ENGLISH        "Primary Load"
+
+REFERENCE           CJMENU_LOAD2
+LANG_ENGLISH        "Secondary Load"
+
+REFERENCE           CJMENU_LOAD3
+LANG_ENGLISH        "Tertiary Load"
+
+REFERENCE           CJMENU_SUICIDE
+LANG_ENGLISH        "Suicide"
+
+REFERENCE           CJMENU_DECALS
+LANG_ENGLISH        "Toggle Decals"
+
+REFERENCE           CJMENU_FX
+LANG_ENGLISH        "Toggle FX"
+
+REFERENCE           CJMENU_DRAW
+LANG_ENGLISH        "Toggle Draw Distance"
+
+REFERENCE           CJMENU_FOG
+LANG_ENGLISH        "Toggle Fog"
+
+REFERENCE           CJMENU_BRIGHT
+LANG_ENGLISH        "Toggle Fullbight"
+
+REFERENCE           CJMENU_THIRD
+LANG_ENGLISH        "Toggle 3rd Person"
+
+REFERENCE           CJMENU_SPEC
+LANG_ENGLISH        "Spectator"
+
+REFERENCE           CJMENU_PLAYER
+LANG_ENGLISH        "Player"
+
+REFERENCE           CJMENU_TIME
+LANG_ENGLISH        "Time Spent Alive:"
+
+ENDMARKER

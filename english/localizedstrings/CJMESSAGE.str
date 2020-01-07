@@ -1,0 +1,37 @@
+REFERENCE           CJMESSAGE_1_FOLLOW
+LANG_ENGLISH        "1. Follow me"
+
+REFERENCE           CJMESSAGE_2_STAYHERE
+LANG_ENGLISH        "2. Stay here"
+
+REFERENCE           CJMESSAGE_3_INPOSITION
+LANG_ENGLISH        "3. In position"
+
+REFERENCE           CJMESSAGE_4_HELPSTACK
+LANG_ENGLISH        "4. Please help stack"
+
+REFERENCE           CJMESSAGE_5_YES
+LANG_ENGLISH        "5. Yes!"
+
+REFERENCE           CJMESSAGE_6_NO
+LANG_ENGLISH        "6. No!"
+
+REFERENCE           CJMESSAGE_7_OMW
+LANG_ENGLISH        "7. On my way"
+
+REFERENCE           CJMESSAGE_8_SORRY
+LANG_ENGLISH        "8. Sorry"
+
+REFERENCE           CJMESSAGE_1_CHAT
+LANG_ENGLISH        "1. Chat"
+
+REFERENCE           CJMESSAGE_3_CUSTOM
+LANG_ENGLISH        "3. Vote"
+
+REFERENCE           CJMESSAGE_2_CUSTOM
+LANG_ENGLISH        "2. Graphics"
+
+REFERENCE           CJMESSAGE_4_CUSTOM
+LANG_ENGLISH        "4. Admin Menu"
+
+ENDMARKER

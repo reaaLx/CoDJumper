@@ -1,0 +1,82 @@
+REFERENCE           CJRANK_ROACH
+LANG_ENGLISH        "Roach"
+
+REFERENCE           CJRANK_UNKNOWN
+LANG_ENGLISH        "Unknown"
+
+REFERENCE           CJRANK_NOOB
+LANG_ENGLISH        "Noob"
+
+REFERENCE           CJRANK_NOVICE
+LANG_ENGLISH        "Novice"
+
+REFERENCE           CJRANK_AMATEUR
+LANG_ENGLISH        "Amateur"
+
+REFERENCE           CJRANK_LEARNER
+LANG_ENGLISH        "Learner"
+
+REFERENCE           CJRANK_APPRENTICE
+LANG_ENGLISH        "Apprentice"
+
+REFERENCE           CJRANK_RECRUIT
+LANG_ENGLISH        "Recruit"
+
+REFERENCE           CJRANK_REGULAR
+LANG_ENGLISH        "Regular"
+
+REFERENCE           CJRANK_ADEPT
+LANG_ENGLISH        "Adept"
+
+REFERENCE           CJRANK_SKILLED
+LANG_ENGLISH        "Skilled"
+
+REFERENCE           CJRANK_EXPERIENCED
+LANG_ENGLISH        "Experienced"
+
+REFERENCE           CJRANK_TALENTED
+LANG_ENGLISH        "Talented"
+
+REFERENCE           CJRANK_VETERAN
+LANG_ENGLISH        "Veteran"
+
+REFERENCE           CJRANK_EXPERT
+LANG_ENGLISH        "Expert"
+
+REFERENCE           CJRANK_PRO
+LANG_ENGLISH        "Pro Jumper"
+
+REFERENCE           CJRANK_WICKED
+LANG_ENGLISH        "Wicked"
+
+REFERENCE           CJRANK_SICK
+LANG_ENGLISH        "Sick"
+
+REFERENCE           CJRANK_ELITE
+LANG_ENGLISH        "Elite"
+
+REFERENCE           CJRANK_1337
+LANG_ENGLISH        "1337 h4x0r"
+
+REFERENCE           CJRANK_HACKER
+LANG_ENGLISH        "Too Good for Skill"
+
+REFERENCE           CJRANK_DEMIGOD
+LANG_ENGLISH        "CoDJumper Demi-God"
+
+REFERENCE           CJRANK_GOD
+LANG_ENGLISH        "CoDJumper God"
+
+REFERENCE           CJRANK_LANCAST
+LANG_ENGLISH        "As Pro As Lancast"
+
+REFERENCE           CJRANK_VIP
+LANG_ENGLISH        "VIP"
+
+REFERENCE           CJRANK_ADMIN
+LANG_ENGLISH        "Server Admin"
+
+REFERENCE           CJRANK_SOVIET
+LANG_ENGLISH        "Soviet"
+
+ENDMARKER

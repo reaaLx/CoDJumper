@@ -1,0 +1,3 @@
+loadMenu { "ui_mp/settings_quick_cj.menu" }
+loadMenu { "ui_mp/settings_quick_cj_@mpui_rules_spectating.menu" }
+loadMenu { "ui_mp/settings_quick_cj_@mpui_rules_time_limit.menu" }

@@ -1,0 +1,124 @@
+REFERENCE           CJ_OBJ
+LANG_ENGLISH        " "
+
+REFERENCE           CJ_OBJ_SCORE
+LANG_ENGLISH        " "
+
+REFERENCE           CJ_OBJ_HINT
+LANG_ENGLISH        " "
+
+REFERENCE           CJ_NULL
+LANG_ENGLISH        " "
+
+REFERENCE           CJ_NOPOS
+LANG_ENGLISH        "^1T^7here is no position ^1&&1^7 to load."
+
+REFERENCE           CJ_POSLOAD
+LANG_ENGLISH        "^2P^7osition ^5&&1^7 loaded."
+
+REFERENCE           CJ_SAVED
+LANG_ENGLISH        "^2P^7osition ^5&&1^7 saved."
+
+REFERENCE           CJ_PROMOTED
+LANG_ENGLISH        "^2You have been promoted!^7"
+
+REFERENCE           CJ_DEMOTED
+LANG_ENGLISH        "^1You have been demoted!^7"
+
+REFERENCE           CJ_NOSAVE
+LANG_ENGLISH        "^1S^7ave disabled on &&1."
+
+REFERENCE           CJ_NOSAVEZONE
+LANG_ENGLISH        "^1S^7ave disabled in this zone."
+
+REFERENCE           CJ_CLOSE
+LANG_ENGLISH        "Close"
+
+REFERENCE           CJ_BACK
+LANG_ENGLISH        "Back"
+
+REFERENCE           CJ_PREVPLAYER
+LANG_ENGLISH        "Previous Player"
+
+REFERENCE           CJ_NEXTPLAYER
+LANG_ENGLISH        "Next Player"
+
+REFERENCE           CJ_PREVMAP
+LANG_ENGLISH        "Previous Map"
+
+REFERENCE           CJ_NEXTMAP
+LANG_ENGLISH        "Next Map"
+
+REFERENCE           CJ_VOTENOW
+LANG_ENGLISH        "Vote"
+
+REFERENCE           CJ_VOTE_YES
+LANG_ENGLISH        "^2Yes^7:"
+
+REFERENCE           CJ_VOTE_NO
+LANG_ENGLISH        "^1No^7:"
+
+REFERENCE           CJ_VOTE_YES_KEY
+LANG_ENGLISH        "&&1       [Key: [{openscriptmenu cjvote cjvoteyes}]]"
+
+REFERENCE           CJ_VOTE_NO_KEY
+LANG_ENGLISH        "&&1       [Key: [{openscriptmenu cjvote cjvoteno}]]"
+
+REFERENCE           CJ_TWEAK
+LANG_ENGLISH        "Graphics Tweaks"
+
+REFERENCE           CJ_FX
+LANG_ENGLISH        "Draw FX"
+
+REFERENCE           CJ_DECALS
+LANG_ENGLISH        "Draw Decals"
+
+REFERENCE           CJ_BRIGHT
+LANG_ENGLISH        "Fullbright"
+
+REFERENCE           CJ_DRAW
+LANG_ENGLISH        "Draw Distance"
+
+REFERENCE           CJ_TOGGLE
+LANG_ENGLISH        "Toggle"
+
+REFERENCE           CJ_RESET
+LANG_ENGLISH        "Reset"
+
+REFERENCE           CJ_1K
+LANG_ENGLISH        "1000"
+
+REFERENCE           CJ_2K
+LANG_ENGLISH        "2500"
+
+REFERENCE           CJ_FOG
+LANG_ENGLISH        "Fog"
+
+REFERENCE           CJ_THIRD
+LANG_ENGLISH        "3rd Person"
+
+REFERENCE           CJ_VOTE
+LANG_ENGLISH        "Vote Menu"
+
+REFERENCE           CJ_VOTE_MAP
+LANG_ENGLISH        "Vote: Extend/Rotate/Change"
+
+REFERENCE           CJ_VOTE_MAP_EXTEND
+LANG_ENGLISH        "Vote: Extend Time"
+
+REFERENCE           CJ_VOTE_MAP_ROTATE
+LANG_ENGLISH        "Vote: Rotate Map"
+
+REFERENCE           CJ_VOTE_MAP_CHANGE
+LANG_ENGLISH        "Vote: Change Map"
+
+REFERENCE           CJ_VOTE_PLAYER_KICK
+LANG_ENGLISH        "Vote: Kick Player"
+
+REFERENCE           CJ_VOTE_PLAYER_BAN
+LANG_ENGLISH        "Vote: Ban Player"
+
+REFERENCE           CJ_GT
+LANG_ENGLISH        "CoDJumper Mod"
+
+ENDMARKER
