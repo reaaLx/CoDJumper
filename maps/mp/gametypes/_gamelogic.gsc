@@ -1559,9 +1559,10 @@ Callback_StartGameType()
 	#/
 	
 	thread startGame();
-
 	level thread updateWatchedDvars();
 	level thread timeLimitThread();
+
+	thread codjumper\_cj_utility::wrongGametype();
 }
 
 

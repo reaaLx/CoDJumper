@@ -7,10 +7,13 @@
         borderSize 1
         foreColor 1 1 1 1
         blurWorld 2
-        onESC { play mouse_click ; close self ;  }
         focusColor 1 1 1 1
         visible 0
-
+        onESC 
+        { 
+            play "mouse_click"; 
+            close "self";
+        }
         itemDef
         {
             name "graphic_bg"
@@ -38,320 +41,369 @@
         }
         itemDef
         {
-            name                      "cj_close"
-            rect                      80 76 30 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.3
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_CLOSE"
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; close graphics ;  }
-            visible 1                 
+            name "cj_close"
+            rect 80 76 30 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.3
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_CLOSE"
+            visible 1
+            mouseEnter 
+            { 
+                play "mouse_over";
+            }
+            action 
+            { 
+                play "mouse_click"; 
+                close "graphics";
+            }
         }
         itemDef
         {
-            name                      "graphics_tweaks"
-            rect                      -105 -60 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.375
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_TWEAK"
-            visible 1                 
-            decoration                
+            name "graphics_tweaks"
+            rect -105 -60 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.375
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_TWEAK"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      -105 -55 98 0.5 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.5
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect -105 -55 98 0.5 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.5
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      -105 -54 98 0.5 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.5
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect -105 -54 98 0.5 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.5
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "graphics_decals"
-            rect                      -105 -40 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.267857
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_DECALS"
-            visible 1                 
-            decoration                
+            name "graphics_decals"
+            rect -105 -40 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.267857
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_DECALS"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "graphics_fullbright"
-            rect                      -105 -20 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.267857
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_BRIGHT"
-            visible 1                 
-            decoration                
+            name "graphics_fullbright"
+            rect -105 -20 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.267857
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_BRIGHT"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "graphics_fx"
-            rect                      -105 0 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.267857
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_FX"
-            visible 1                 
-            decoration                
+            name "graphics_fx"
+            rect -105 0 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.267857
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_FX"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "graphics_drawdistance"
-            rect                      -105 20 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.267857
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_DRAW"
-            visible 1                 
-            decoration                
+            name "graphics_drawdistance"
+            rect -105 20 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.267857
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_DRAW"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "graphics_fog"
-            rect                      -105 40 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.267857
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_FOG"
-            visible 1                 
-            decoration                
+            name "graphics_fog"
+            rect -105 40 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.267857
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_FOG"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "graphics_thirdperson"
-            rect                      -105 60 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            borderSize                1
-            foreColor                 1 1 1 0.8
-            textFont                  UI_FONT_NORMAL
-            textAlignY                8
-            textScale                 0.267857
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            text                      "@CJ_THIRD"
-            visible 1                 
-            decoration                
+            name "graphics_thirdperson"
+            rect -105 60 0 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            borderSize 1
+            foreColor 1 1 1 0.8
+            textFont UI_FONT_NORMAL
+            textAlignY 8
+            textScale 0.267857
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            text "@CJ_THIRD"
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      10 -46 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            border                    WINDOW_BORDER_FULL
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.2
-            borderColor               1 1 1 0.6
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect 10 -46 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            border WINDOW_BORDER_FULL
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.2
+            borderColor 1 1 1 0.6
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      10 -26 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            border                    WINDOW_BORDER_FULL
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.2
-            borderColor               1 1 1 0.6
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect 10 -26 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            border WINDOW_BORDER_FULL
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.2
+            borderColor 1 1 1 0.6
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      10 -6 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            border                    WINDOW_BORDER_FULL
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.2
-            borderColor               1 1 1 0.6
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect 10 -6 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            border WINDOW_BORDER_FULL
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.2
+            borderColor 1 1 1 0.6
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      10 14 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            border                    WINDOW_BORDER_FULL
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.2
-            borderColor               1 1 1 0.6
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect 10 14 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            border WINDOW_BORDER_FULL
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.2
+            borderColor 1 1 1 0.6
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      10 34 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            border                    WINDOW_BORDER_FULL
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.2
-            borderColor               1 1 1 0.6
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect 10 34 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            border WINDOW_BORDER_FULL
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.2
+            borderColor 1 1 1 0.6
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            rect                      10 54 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            border                    WINDOW_BORDER_FULL
-            borderSize                1
-            foreColor                 1 1 1 1
-            backColor                 1 1 1 0.2
-            borderColor               1 1 1 0.6
-            textScale                 0.55
-            visible 1                 
-            decoration                
+            rect 10 54 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            border WINDOW_BORDER_FULL
+            borderSize 1
+            foreColor 1 1 1 1
+            backColor 1 1 1 0.2
+            borderColor 1 1 1 0.6
+            textScale 0.55
+            visible 1 
+            decoration 
         }
         itemDef
         {
-            name                      "cj_decals"
-            rect                      10 -45 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.1875
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; scriptMenuResponse decals ;  }
-            exp                       text ( ( dvarstring( "gdecalstate" ) + "Toggle" ) );
-            visible 1                 
+            name "cj_decals"
+            rect 10 -45 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.1875
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            visible 1
+            exp text ( ( dvarstring( "gdecalstate" ) + "Toggle" ) );
+            mouseEnter 
+            { 
+                play "mouse_over"; 
+            }
+            action 
+            { 
+                play "mouse_click"; 
+                scriptMenuResponse "decals"; 
+            }
         }
         itemDef
         {
-            name                      "cj_bright"
-            rect                      10 -25 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.1875
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; scriptMenuResponse bright ;  }
-            exp                       text ( ( dvarstring( "gfullbrightstate" ) + "Toggle" ) );
-            visible 1                 
+            name "cj_bright"
+            rect 10 -25 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.1875
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            exp text ( ( dvarstring( "gfullbrightstate" ) + "Toggle" ) );
+            visible 1 
+            mouseEnter 
+            { 
+                play "mouse_over";
+            }
+            action 
+            { 
+                play "mouse_click"; 
+                scriptMenuResponse "bright";
+            }
         }
         itemDef
         {
-            name                      "cj_fx"
-            rect                      10 -5 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.1875
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; scriptMenuResponse fx ;  }
-            exp                       text ( ( dvarstring( "gfxstate" ) + "Toggle" ) );
-            visible 1                 
+            name "cj_fx"
+            rect 10 -5 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.1875
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            exp text ( ( dvarstring( "gfxstate" ) + "Toggle" ) );
+            visible 1 
+            mouseEnter 
+            { 
+                play "mouse_over";
+            }
+            action 
+            { 
+                play "mouse_click"; 
+                scriptMenuResponse "fx";
+            }
         }
         itemDef
         {
-            name                      "cj_draw"
-            rect                      10 15 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.1875
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; scriptMenuResponse draw ;  }
-            exp                       text ( ( "^8Draw distance is ^2" + dvarstring( "gdrawstate" ) + "^8." ) );
-            visible 1                 
+            name "cj_draw"
+            rect 10 15 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.1875
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            exp text ( ( "^8Draw distance is ^2" + dvarstring( "gdrawstate" ) + "^8." ) );
+            visible 1
+            mouseEnter 
+            { 
+                play "mouse_over";
+            }
+            action 
+            { 
+                play "mouse_click";
+                scriptMenuResponse "draw";
+            }
         }
         itemDef
         {
-            name                      "cj_fog"
-            rect                      10 35 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.1875
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; scriptMenuResponse fog ;  }
-            exp                       text ( ( dvarstring( "gfogstate" ) + "Toggle" ) );
-            visible 1                 
+            name "cj_fog"
+            rect 10 35 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.1875
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            exp text ( ( dvarstring( "gfogstate" ) + "Toggle" ) );
+            visible 1 
+            mouseEnter 
+            { 
+                play "mouse_over";
+            }
+            action 
+            { 
+                play "mouse_click"; 
+                scriptMenuResponse "fog";
+            }
         }
         itemDef
         {
-            name                      "cj_thirdperson"
-            rect                      10 55 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
-            style                     WINDOW_STYLE_FILLED
-            borderSize                1
-            foreColor                 1 1 1 1
-            type                      ITEM_TYPE_BUTTON
-            textFont                  UI_FONT_NORMAL
-            textAlign                 ITEM_ALIGN_MIDDLE_CENTER
-            textScale                 0.1875
-            textStyle                 ITEM_TEXTSTYLE_SHADOWED
-            mouseEnter                { play mouse_over ;  }
-            action                    { play mouse_click ; scriptMenuResponse thirdperson ;  }
-            exp                       text ( ( dvarstring( "gthirdstate" ) + "Toggle" ) );
-            visible 1                 
+            name "cj_thirdperson"
+            rect 10 55 82 14 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+            style WINDOW_STYLE_FILLED
+            borderSize 1
+            foreColor 1 1 1 1
+            type ITEM_TYPE_BUTTON
+            textFont UI_FONT_NORMAL
+            textAlign ITEM_ALIGN_MIDDLE_CENTER
+            textScale 0.1875
+            textStyle ITEM_TEXTSTYLE_SHADOWED
+            exp text ( ( dvarstring( "gthirdstate" ) + "Toggle" ) );
+            visible 1 
+            mouseEnter 
+            { 
+                play "mouse_over"; 
+            }
+            action 
+            { 
+                play "mouse_click"; 
+                scriptMenuResponse "thirdperson"; 
+            }
         }
     }
 }

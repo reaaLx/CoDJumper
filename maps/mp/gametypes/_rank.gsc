@@ -29,9 +29,9 @@ init()
 
 	if ( level.teamBased )
 	{
-		registerScoreInfo( "kill", 100 );
-		registerScoreInfo( "headshot", 100 );
-		registerScoreInfo( "assist", 20 );
+		registerScoreInfo( "kill", 0 );
+		registerScoreInfo( "headshot", 0 );
+		registerScoreInfo( "assist", 0 );
 		registerScoreInfo( "suicide", 0 );
 		registerScoreInfo( "teamkill", 0 );
 	}
@@ -45,12 +45,12 @@ init()
 	}
 	
 	registerScoreInfo( "win", 1 );
-	registerScoreInfo( "loss", 0.5 );
-	registerScoreInfo( "tie", 0.75 );
-	registerScoreInfo( "capture", 300 );
-	registerScoreInfo( "defend", 300 );
+	registerScoreInfo( "loss", 1);
+	registerScoreInfo( "tie", 1 );
+	registerScoreInfo( "capture", 0 );
+	registerScoreInfo( "defend", 0 );
 	
-	registerScoreInfo( "challenge", 2500 );
+	registerScoreInfo( "challenge", 0 );
 
 	level.maxRank = int(tableLookup( "mp/rankTable.csv", 0, "maxrank", 1 ));
 	level.maxPrestige = int(tableLookup( "mp/rankIconTable.csv", 0, "maxprestige", 1 ));

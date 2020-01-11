@@ -334,34 +334,35 @@ onCustomMenuResponse()
 				}
 				else if(self.cj["admin"]["givemenu"] == 1)
 				{
-					if(response == "give_ak47")										{ self.cj["admin"]["weapfinal"]="ak47"; }
-					else if(response == "give_rpd")								{ self.cj["admin"]["weapfinal"]="rpd"; }
-					else if(response == "give_brick_blaster")			{ self.cj["admin"]["weapfinal"]="brick_blaster"; }
-					else if(response == "give_claymore")					{ self.cj["admin"]["weapfinal"]="claymore"; }
-					else if(response == "give_defaultweapon")			{ self.cj["admin"]["weapfinal"]="defaultweapon"; }
-					else if(response == "give_deserteagle")				{ self.cj["admin"]["weapfinal"]="deserteagle"; }
-					else if(response == "give_deserteaglegold")		{ self.cj["admin"]["weapfinal"]="deserteaglegold"; }
-					else if(response == "give_flash_grenade")			{ self.cj["admin"]["weapfinal"]="flash_grenade"; }
-					else if(response == "give_frag_grenade")			{ self.cj["admin"]["weapfinal"]="frag_grenade"; }
-					else if(response == "give_g36c")							{ self.cj["admin"]["weapfinal"]="g36c"; }
-					else if(response == "give_m1014")							{ self.cj["admin"]["weapfinal"]="m1014"; }
-					else if(response == "give_m16")								{ self.cj["admin"]["weapfinal"]="m16"; }
-					else if(response == "give_m4")								{ self.cj["admin"]["weapfinal"]="m4"; }
-					else if(response == "give_m60e4")							{ self.cj["admin"]["weapfinal"]="m60e4"; }
-					else if(response == "give_m40a3")							{ self.cj["admin"]["weapfinal"]="m40a3"; }
-					else if(response == "give_mp44")							{ self.cj["admin"]["weapfinal"]="mp44"; }
-					else if(response == "give_mp5")								{ self.cj["admin"]["weapfinal"]="mp5"; }
-					else if(response == "give_p90")								{ self.cj["admin"]["weapfinal"]="p90"; }
-					else if(response == "give_remington700")			{ self.cj["admin"]["weapfinal"]="remington700"; }
-					else if(response == "give_skorpion")					{ self.cj["admin"]["weapfinal"]="skorpion"; }
-					else if(response == "give_uzi")								{ self.cj["admin"]["weapfinal"]="uzi"; }
-					else if(response == "give_winchester1200")		{ self.cj["admin"]["weapfinal"]="winchester1200"; }
+					// guns
+					if(response == "give_ak47")						{ self.cj["admin"]["weapfinal"] = "ak47"; }
+					else if(response == "give_rpd")					{ self.cj["admin"]["weapfinal"] = "rpd"; }
+					else if(response == "give_defaultweapon")		{ self.cj["admin"]["weapfinal"] = "defaultweapon"; }
+					else if(response == "give_deserteagle")			{ self.cj["admin"]["weapfinal"] = "deserteagle"; }
+					else if(response == "give_deserteaglegold")		{ self.cj["admin"]["weapfinal"] = "deserteaglegold"; }
+					else if(response == "give_m1014")				{ self.cj["admin"]["weapfinal"] = "m1014"; }
+					else if(response == "give_m16")					{ self.cj["admin"]["weapfinal"] = "m16"; }
+					else if(response == "give_m4")					{ self.cj["admin"]["weapfinal"] = "m4"; }
+					else if(response == "give_m40a3")				{ self.cj["admin"]["weapfinal"] = "m40a3"; }
+					else if(response == "give_mp5k")				{ self.cj["admin"]["weapfinal"] = "mp5k"; }
+					else if(response == "give_p90")					{ self.cj["admin"]["weapfinal"] = "p90"; }
+					else if(response == "give_uzi")					{ self.cj["admin"]["weapfinal"] = "uzi"; }
 
-					else if(response == "attach_none")						{ self.cj["admin"]["attachfinal"]=""; }
-					else if(response == "attach_silencer")				{ self.cj["admin"]["attachfinal"]="_silencer"; }
-					else if(response == "attach_acog")						{ self.cj["admin"]["attachfinal"]="_acog"; }
-					else if(response == "attach_reflex")					{ self.cj["admin"]["attachfinal"]="_reflex"; }
-					else if(response == "attach_grip")						{ self.cj["admin"]["attachfinal"]="_grip"; }
+					// need to fix since it doesn't use _mp prefix
+					//else if(response == "give_winchester1200")		{ self.cj["admin"]["weapfinal"] = "winchester1200"; }
+
+					// attachments
+					else if(response == "attach_none")				{ self.cj["admin"]["attachfinal"] = ""; }
+					else if(response == "attach_silencer")			{ self.cj["admin"]["attachfinal"] = "_silencer"; }
+					else if(response == "attach_acog")				{ self.cj["admin"]["attachfinal"] = "_acog"; }
+					else if(response == "attach_reflex")			{ self.cj["admin"]["attachfinal"] = "_reflex"; }
+					else if(response == "attach_grip")				{ self.cj["admin"]["attachfinal"] = "_grip"; }
+					else if(response == "attach_tactical")			{ self.cj["admin"]["attachfinal"] = "_tactical"; }
+					else if(response == "attach_akimbo")			{ self.cj["admin"]["attachfinal"] = "_akimbo"; }
+					else if(response == "attach_thermal")			{ self.cj["admin"]["attachfinal"] = "_thermal"; }
+					else if(response == "attach_shotgun")			{ self.cj["admin"]["attachfinal"] = "_shotgun"; }
+					else if(response == "attach_heartbeat")			{ self.cj["admin"]["attachfinal"] = "_heartbeat"; }
+					else if(response == "attach_eotech")			{ self.cj["admin"]["attachfinal"] = "_eotech"; }
 
 					else if(response == "give_weapon")
 					{

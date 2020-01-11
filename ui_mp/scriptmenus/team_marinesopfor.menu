@@ -1,11 +1,11 @@
 #include "ui/menudef.h"
-#include "ui_mp/iw4_macros.inc"
+#include "ui_mp/reaal_ui/iw4_macros.inc"
 
 #define CHOICE_GROUP			"team_marinesopfor"
 #define CHOICE_SEP_1			2
 #define CHOICE_SEP_2			3
 
-#include "ui_mp/menustyle.inc"
+#include "ui_mp/reaal_ui/menustyle.inc"
 #include "ui/choices_setup_common.menu"
 {
 	menuDef
@@ -25,10 +25,10 @@
 			scriptmenuresponse "back";
 		}
 		#define BACKGROUND_BLUR_INGAME
-		#include "ui_mp/blurredbg.inc"
+		#include "ui_mp/reaal_ui/blurredbg.inc"
 		
-		#include "ui_mp/tactical_map.inc"
-		#include "ui_mp/teamicon.inc"
+		#include "ui_mp/reaal_ui/tactical_map.inc"
+		#include "ui_mp/reaal_ui/teamicon.inc"
 		
 		CHOICE_MENU_TITLE( "@MPUI_CHOOSE_TEAM", 0 0 272 28 1 1 )
 		

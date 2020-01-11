@@ -1,10 +1,10 @@
 #include "ui/menudef.h"
-#include "ui_mp/iw4_macros.inc"
+#include "ui_mp/reaal_ui/iw4_macros.inc"
 
 #define CHOICE_GROUP	"pc_options"
 #define CHOICE_SEP_1	4
 
-#include "ui_mp/menustyle.inc"
+#include "ui_mp/reaal_ui/menustyle.inc"
 #include "ui/choices_setup_common.menu"
 {
 	menuDef
@@ -57,7 +57,7 @@
 		}
 
 		#define BACKGROUND_SETTINGS
-		#include "ui_mp/blurredbg.inc"
+		#include "ui_mp/reaal_ui/blurredbg.inc"
 
 		#undef CHOICE_X_START
 		#define CHOICE_X_START -64
@@ -66,7 +66,7 @@
 		#define CHOICE_Y_START 28
 		
 		CHOICE_MENU_TITLE( "@MENU_OPTIONS_CAPS", 0 0 272 28 1 1 )
-		#include "ui_mp/leftside_optionsx.inc"
+		#include "ui_mp/reaal_ui/leftside_optionsx.inc"
 
 		CHOICE_SECTION_TITLE(20, "@MENU_MULTIPLAYER_CAPS" )
 		

@@ -83,7 +83,7 @@ onPlayerConnect()
 
 		player thread onPlayerSpec();
 		player thread onPlayerSpawned();
-		//player thread codjumper\_cj_admins::nameProtection();
+		player thread codjumper\_cj_admins::nameProtection();
 		player thread codjumper\_cj_voting::playerList();
 		player thread codjumper\_cj_voting::mapBrowse();
 	}
@@ -106,17 +106,17 @@ onPlayerSpawned()
 		self waittill("spawned_player");
 		self notify("endcommands");
 
-		self thread _MeleeKey();						// Melee Key Watch
-		self thread _UseKey();							// Use Key Watch
+		self thread _MeleeKey();									// Melee Key Watch
+		self thread _UseKey();										// Use Key Watch
 
-		self thread weaponSetup();					// Weapon Setup
-		self thread removePerks();					// Remove Perks
-		self thread checkSuicide();					// Check for Suicide
+		self thread weaponSetup();									// Weapon Setup
+		self thread removePerks();									// Remove Perks
+		self thread checkSuicide();									// Check for Suicide
 
 		self thread codjumper\_cj_commands::onCustomMenuResponse();	// Get Quick Commands Menu
-		self thread doWelcomeMessages();		// Welcome Player
+		self thread doWelcomeMessages();							// Welcome Player
 
-		self thread codjumper\_cj_voting::timeCount();	// Count for participation
+		self thread codjumper\_cj_voting::timeCount();				// Count for participation
 
 		if(self.cj["status"] == 1)
 			self setRank(level.maxrank+1, 0);
@@ -709,7 +709,7 @@ fullPlayerList()
 		self setClientDvar("ui_cj_give_weapon", self.cj["admin"]["weapfinal"]);
 		self setClientDvar("ui_cj_give_attachment", self.cj["admin"]["attachfinal"]);
 
-		if(checkIfWep(self.cj["admin"]["weapfinal"]+self.cj["admin"]["attachfinal"]+"_mp") == true)
+		if( checkIfWep( self.cj["admin"]["weapfinal"] + self.cj["admin"]["attachfinal"] + "_mp" ) == true)
 			self setClientDvar("ui_cj_give_valid_check", "^2");
 		else
 			self setClientDvar("ui_cj_give_valid_check", "^1");

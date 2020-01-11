@@ -1052,6 +1052,45 @@ giveRecentShieldXP()
 
 Callback_PlayerDamage_internal( eInflictor, eAttacker, victim, iDamage, iDFlags, sMeansOfDeath, sWeapon, vPoint, vDir, sHitLoc, psOffsetTime )
 {	
+
+	if(getDvarInt("cj_showdamage") == 1)
+	{
+		if((isDefined(eAttacker) && eAttacker == self) || sMeansOfDeath == "MOD_FALLING")
+		{
+			if(iDamage > 99)
+				self iPrintln("Damage Taken: ^1" + iDamage);
+			else
+				self iPrintln("Damage Taken: ^2" + iDamage);
+		}
+	}
+
+	if(sMeansOfDeath == "MOD_TRIGGER_HURT")
+	{
+		if(getDvarInt("cj_showdamage_trigger") == 1 && self.cj["trigWait"] != 1)
+		{
+			self iprintln("Trigger Damage: ^1" + iDamage);
+			self.cj["trigWait"] = 1;
+			self thread codjumper\_cj_utility::triggerWait();
+		}
+		return;
+	}	
+	if(getDvarInt("cj_allowdamage") == 0)
+	{
+		if(iDamage > 99)
+			iDamage = 99;
+
+		if(sMeansOfDeath == "MOD_FALLING")
+			iDamage = 0;
+
+		if(sWeapon == "rpg_mp")
+			iDamage = 0;
+
+		if(sWeapon == "beretta_mp")
+			iDamage = 0;
+	}
+	else if(getDvarInt("cj_allowdamage") == 2 && eAttacker != self)
+		iDamage = 0;
+		
 	if ( !isReallyAlive( victim ) )
 		return;
 	
@@ -1527,38 +1566,6 @@ resetAttackerList()
 
 Callback_PlayerDamage( eInflictor, eAttacker, iDamage, iDFlags, sMeansOfDeath, sWeapon, vPoint, vDir, sHitLoc, psOffsetTime )
 {
-	if(getDvarInt("cj_showdamage") == 1)
-	{
-		if((isDefined(eAttacker) && eAttacker == self) || sMeansOfDeath == "MOD_FALLING")
-		{
-			if(iDamage > 99)
-				self iPrintln("Damage Taken: ^1" + iDamage);
-			else
-				self iPrintln("Damage Taken: ^2" + iDamage);
-		}
-	}
-
-	if(sMeansOfDeath == "MOD_TRIGGER_HURT")
-	{
-		if(getDvarInt("cj_showdamage_trigger") == 1 && self.cj["trigWait"] != 1)
-		{
-			self iprintln("Trigger Damage: ^1" + iDamage);
-			self.cj["trigWait"] = 1;
-			self thread codjumper\_cj_utility::triggerWait();
-		}
-		return;
-	}	
-	if(getDvarInt("cj_allowdamage") == 0)
-	{
-		if(iDamage > 99)
-			iDamage = 99;
-
-		if(sMeansOfDeath == "MOD_FALLING")
-			iDamage = 0;
-	}
-	else if(getDvarInt("cj_allowdamage") == 2 && eAttacker != self)
-		iDamage = 0;
-
 	Callback_PlayerDamage_internal( eInflictor, eAttacker, self, iDamage, iDFlags, sMeansOfDeath, sWeapon, vPoint, vDir, sHitLoc, psOffsetTime );
 }
 

@@ -1,10 +1,10 @@
 #include "ui/menudef.h"
-#include "ui_mp/common_macro.inc"
-#include "ui_mp/iw4_macros.inc"
+#include "ui_mp/reaal_ui/common_macro.inc"
+#include "ui_mp/reaal_ui/iw4_macros.inc"
 
 #define CHOICE_GROUP			"settings"
 
-#include "ui_mp/menustyle.inc"
+#include "ui_mp/reaal_ui/menustyle.inc"
 #include "ui/choices_setup_common.menu"
 {
 	menuDef
@@ -34,7 +34,7 @@
 			close "settings_gametype";
 		}
 		#define BACKGROUND_SIDEBAR
-		#include "ui_mp/new_bg.inc"
+		#include "ui_mp/reaal_ui/new_bg.inc"
 
 		PREPROC_SHADER_DRAW( 0 28 640 356 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_TOP, ORIGIN_NONE, "white", 1 1 1 0.15 )
 		PREPROC_SHADER_DRAW( -32 -4 32 32 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_TOP, ORIGIN_NONE, "drop_shadow_tl", 0 0 0 1 )
@@ -59,7 +59,7 @@
 			visible 1
 		}
 		
-		#include "ui_mp/gametype_info.inc"
+		#include "ui_mp/reaal_ui/gametype_info.inc"
 
 		LOCAL_GAMETYPE_SELECTION( 0, "dm", "dm" )
 		LOCAL_GAMETYPE_SELECTION( 1, "war", "war" )
